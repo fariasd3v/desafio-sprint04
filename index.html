@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio da Sprint - Inicio </title>
-    <link rel="stylesheet" href="style.css">
-  
-
+    <title>Ford</title>    
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/carousel.js"></script>
 </head>
-
 <body>
-    <header>
-        <img src="/img/ford-96.png" alt="Logo da FORD" id="logoford">
-        <nav id="navbar">
-            <ul>
-                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-                <li><a href="http://127.0.0.1:5500/lancamento.html">Lançamento</a></li>
-                <li><a href="http://127.0.0.1:5500/contato.html">Contato</a></li>
-            </ul>    
-        </nav>
-        <div></div>
-    </header>
-  
-    <main>
-        <div class="ccentro">
-            <img src="/img/imagem_1.jpg" alt="foto de um carro" class="imgcentro">
-            <p>
-                Esta é a nova Ranger Ford 2022 verifique novidades <a href="">aqui!</a>
-            </p>
+    <header>       
+        <div>
+            <img src="img/logo-ford-256.png" width="150" class="logo" />
         </div>
-    </main>
-
-    <footer>
-        <div class="redesSociais">
+        <nav>
             <ul>
-                <li><a href="https://facebook.com/fordbrasil" target="_blank"><img src="/img/facebook-50.png" id="logosrodape"></a></li>
-                <li><a href="https//instagram.com/fordbrasil" target="_blank"><img src="/img/instagram-logo-50.png" id="logosrodape"></a></li>
-                <li><a href="https://youtube.com/fordbrasil" target="_blank"><img src="/img/youtube-squared-50.png" id="logosrodape"></a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="lancamento.html">Lançamento</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
             </ul>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Ford Motor Company todos os direitos reservados</p>
-        </div>
-        <div class="logo_footer">
-            <img src="/img/ford-96.png" alt="Logo footer">
-        </div>
-    </footer>
-    </div>
-</body>
+        </nav>
 
+    </header>
+    <main>
+        <div id="carousel">
+        </div>
+        <div id="carousel-title">
+        </div>
+        <script>
+             //insert each image on carousel
+            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
+            carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
+            carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
+            Carousel.Start(carouselArr);
+        </script>
+    </main>
+    <footer>
+        <nav id="social">
+            <ul>
+                <li><span class="redesociais">Redes Sociais</span></li>
+                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
+                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
+                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+            </ul>
+        </nav>
+        <div>
+           <img src="img/ford-96.png" width="70"  />
+        </div>
+    </footer>    
+</body>
 </html>
